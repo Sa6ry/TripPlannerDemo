@@ -1,7 +1,6 @@
 # TripPlannerDemo
 
-TripPlannerDemo  App, is a simple app that allows the users to select source, destination & date of their trips. It uses GoEuro web service to provide suggestions
-It demostrate creating custom UI's, creating the UI from the story board as well from the code as well integrating swift with objective-c!
+TripPlannerDemo  App, is a simple app that allows the users to select source, destination & date of their trips in a nice way with custom animations. It relay on GoEuro web service to provide those suggestions
 
 ## Data Classes
 
