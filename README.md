@@ -25,7 +25,8 @@ The Code is known to work best with iOS 9.0 on iPhone devices, it plays niceley 
 ## TODO
 
 - Unit Test & UI Test
+- The animation for date picker need to be custom inorder to have the look and feel of the rest of the UI elements, however I used popover for simplicity
 
 ## Others
 
-I used different techqnice to show different ways for achiving results, I created the UI from the code in AutocompleteViewController and from the .xib in MainViewController
+Different techqnices have been used to show different ways of doing things. For example, I created the UI from the code in AutocompleteViewController and from the .xib in MainViewController. I used Swift to code DatePickerPopoverViewController to show how to integrate Swift with Objective-C
