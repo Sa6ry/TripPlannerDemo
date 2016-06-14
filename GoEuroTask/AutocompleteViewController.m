@@ -171,8 +171,8 @@
     self.cancelButton = [[UIButton alloc] init];
     self.cancelButton.translatesAutoresizingMaskIntoConstraints = NO;
     self.cancelButton.titleLabel.font = self.sourceView.font;
-    
-    [self.cancelButton setTitle:NSLocalizedString(@"Cancel", @"Cancel") forState:UIControlStateNormal];
+
+    [self.cancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
     [self.cancelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.cancelButton addTarget:self action:@selector(onCancel:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -240,6 +240,10 @@
     return true;
 }
 
+-(BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    return false;
+}
 
 - (BOOL)textFieldShouldClear:(UITextField *)textField
 {

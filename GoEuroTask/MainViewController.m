@@ -100,14 +100,16 @@
 
 - (IBAction)onSearch:(id)sender {
     
+    NSString* message = self.inputTo.text.length == 0 || self.inputFrom.text.length == 0 || self.inputDate.text.length == 0 ? NSLocalizedString(@"Please select your From, To & Date first!",nil) : NSLocalizedString(@"Search is not yet implemented!",nil);
+    
     // We have to present the autocomplte
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:nil
-                                  message:@"Search is not yet implemented!"
+    UIAlertController * alert =   [UIAlertController
+                                  alertControllerWithTitle:@"GoEuro"
+                                  message:message
                                   preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* ok = [UIAlertAction
-                         actionWithTitle:@"OK"
+                         actionWithTitle:NSLocalizedString(@"OK",nil)
                          style:UIAlertActionStyleDefault
                          handler:^(UIAlertAction * action)
                          {
